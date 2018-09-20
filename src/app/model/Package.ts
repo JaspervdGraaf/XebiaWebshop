@@ -6,4 +6,18 @@ export class Package {
   name: string;
   price: string;
   products: Product[];
+
+  constructor(
+    id: number,
+    image: string,
+    name: string,
+    price: string,
+    products: Product[]
+  ) {
+    this.id = id;
+    this.image = image;
+    this.name = name;
+    this.price = price;
+    this.products = products;
+  }
 }
