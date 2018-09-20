@@ -5,7 +5,7 @@ import { Product } from "../model/Product";
 @Component({
   selector: "app-detail",
   templateUrl: "./detail.component.html",
-  styleUrls: ["./detail.component.scss"]
+  styleUrls: ["./detail.component.css"]
 })
 export class DetailComponent implements OnInit {
   package: Package;
