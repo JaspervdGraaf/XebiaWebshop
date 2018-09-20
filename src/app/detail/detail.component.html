@@ -1,10 +1,28 @@
-<h1>{{package.name}}</h1>
-
-<ng-container *ngFor="let product of package.products">
-  <p>{{product.name}} - {{product.description}}</p>
-</ng-container>
-
-<!-- Accent-colored raised button with ripple -->
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col">
+    <h1>{{package.name}}</h1>
+    <h2>€{{package.price}}</h2>
+    <p>{{package.description}}</p>
+    <!-- Accent-colored raised button with ripple -->
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  Button
+  Buy now!
 </button>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col">
+    <ng-container *ngFor="let product of package.products">
+      
+
+      <mat-card style="width:40%; float:left; margin:5px" class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{product.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image style="height: 176px;" src="{{product.image}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{product.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>

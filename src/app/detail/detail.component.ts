@@ -9,22 +9,23 @@ import { Product } from "../model/Product";
 })
 export class DetailComponent implements OnInit {
   package: Package;
-  soap: Product;
+  toothpaste: Product;
   toothbrush: Product;
+
 
   constructor() {}
 
   ngOnInit(): void {
-    this.soap = new Product("image", "Soapy", "Soapy soap");
+    this.toothpaste = new Product("../../assets/images/toothpaste.jpg", "Toothpaste", "Nice mint");
     this.toothbrush = new Product(
-      "image",
+      "../../assets/images/toothbrush.jpg",
       "Toothbrush",
       "Brush for your teeth"
     );
 
-    this.package = new Package(1, "image", "Sexy Package", "$300", [
-      this.soap,
+    this.package = new Package(1, "image", "Great Starter Package", "25", [
+      this.toothpaste,
       this.toothbrush
-    ]);
+    ], "For just 25 euros per month you get everything a superman like you would need delivered to your home.");
   }
 }
