@@ -1,3 +1,32 @@
-<mat-card>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-</mat-card>
+<div class="mdl-grid">
+    <mat-card class="mdl-cell--5-col">
+        <mat-card-header>
+            <mat-card-title>Superman Kit</mat-card-title>
+            <mat-card-subtitle>Only delivering in Italy</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/Men.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            For only <span class="price">€24,99</span> a month, you get everything a superman like you would need delivered to your home.
+        </mat-card-content>
+        <mat-divider></mat-divider>
+          <mat-card-actions>
+                <a mat-raised-button href="tel:061234567890" color="primary">ORDER NOW</a>
+                <button mat-raised-button routerLink="/detail/men">DETAILS</button>
+            </mat-card-actions>
+    </mat-card>
+    <mat-card class="mdl-cell--5-col mdl-cell--1-offset">
+        <mat-card-header>
+            <mat-card-title>Superwoman Kit</mat-card-title>
+            <mat-card-subtitle>Only delivering in Italy</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/Women.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            For only <span class="price">€24,99</span> a month, you get everything a superwoman like you would need delivered to your home.
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+                <a mat-raised-button href="tel:061234567890" color="accent">ORDER NOW</a>
+                <button mat-raised-button  routerLink="/detail/women">DETAILS</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
