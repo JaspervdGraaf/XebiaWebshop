@@ -9,10 +9,8 @@
 </button>
   </div>
   <div class="mdl-cell mdl-cell--6-col">
-    <ng-container *ngFor="let product of package.products">
-      
-
-      <mat-card style="width:40%; float:left; margin:5px" class="example-card">
+    <div class="wrap">
+      <mat-card class="card" *ngFor="let product of package.products">
         <mat-card-header>
           <mat-card-title>{{product.name}}</mat-card-title>
         </mat-card-header>
@@ -23,6 +21,6 @@
           </p>
         </mat-card-content>
       </mat-card>
-    </ng-container>
+    </div>
   </div>
 </div>

@@ -1,0 +1,28 @@
+.wrap {
+    font-size: 0;
+
+}
+
+.card {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box; 
+    vertical-align: top;
+}
+
+.card p {
+    min-height: 125px;
+}
+
+.card img {
+    max-height: 150px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+mat-card-title {
+    min-height: 50px;
+}
