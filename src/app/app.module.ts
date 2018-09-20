@@ -8,11 +8,18 @@ import {MatDividerModule} from '@angular/material/divider';
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing.module";
 import { FeatureComponent } from "./featured/feature.component";
-import { DetailComponent } from "./detail/detail.component";
+import { SupermanComponent } from "./superman/superman.component";
+import { SuperwomanComponent } from "./superwoman/superwoman.component";
 import { TwitterComponent } from "./featured/twitter/twitter.component";
 
 @NgModule({
-  declarations: [AppComponent, FeatureComponent, DetailComponent, TwitterComponent],
+  declarations: [
+    AppComponent,
+    FeatureComponent,
+    SupermanComponent,
+    SuperwomanComponent,
+    TwitterComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
