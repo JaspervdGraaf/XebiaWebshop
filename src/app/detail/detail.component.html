@@ -1,3 +1,10 @@
-<p>
-  detail works!
-</p>
+<h1>{{package.name}}</h1>
+
+<ng-container *ngFor="let product of package.products">
+  <p>{{product.name}} - {{product.description}}</p>
+</ng-container>
+
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Button
+</button>
