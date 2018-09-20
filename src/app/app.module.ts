@@ -5,12 +5,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 
+
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing.module";
 import { FeatureComponent } from "./featured/feature.component";
 import { SupermanComponent } from "./superman/superman.component";
 import { SuperwomanComponent } from "./superwoman/superwoman.component";
 import { TwitterComponent } from "./featured/twitter/twitter.component";
+import {RatingComponent} from "./featured/twitter/rating/rating.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { TwitterComponent } from "./featured/twitter/twitter.component";
     FeatureComponent,
     SupermanComponent,
     SuperwomanComponent,
-    TwitterComponent
+    TwitterComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
