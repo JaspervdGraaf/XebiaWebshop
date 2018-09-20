@@ -66,7 +66,7 @@ export class SupermanComponent implements OnInit {
       1,
       "image",
       "The Superman Kit",
-      "25",
+      "24,99",
       [
         this.toothpaste,
         this.edge,
@@ -77,7 +77,7 @@ export class SupermanComponent implements OnInit {
         this.toothbrush,
         this.oldspice
       ],
-      "For just 25 euros per month you get everything a superman like you would need delivered to your home."
+      "For just €24,99 per month you get everything a superman like you would need delivered to your home."
     );
   }
 }

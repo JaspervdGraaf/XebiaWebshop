@@ -84,7 +84,7 @@ export class SuperwomanComponent implements OnInit {
       1,
       "image",
       "The Superwoman Kit",
-      "25",
+      "24,99",
       [
         this.toothpaste,
         this.toothbrush,
@@ -97,7 +97,7 @@ export class SuperwomanComponent implements OnInit {
         this.moist,
         this.tampax
       ],
-      "For just 25 euros per month you get everything a superwoman like you would need delivered to your home."
+      "For just €24,99 per month you get everything a superwoman like you would need delivered to your home."
     );
   }
 }
