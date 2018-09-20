@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FeatureComponent } from './featured/feature.component';
 
 const routes: Routes = [
-    {
+      {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/featured',
         pathMatch: 'full',
         data: {}
       },
+      {
+          path: 'featured',
+          component: FeatureComponent
+      }
 ];
 
 @NgModule({
